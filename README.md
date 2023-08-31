@@ -1,2 +1,2 @@
-# api.SDD2.io
+# api.sdd2.io
 api host site
