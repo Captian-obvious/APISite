@@ -1,8 +1,14 @@
-h {
+h1 {
     color: #980000;
 }
-h2 {
+a {
     color: #980000;
+}
+a:hover {
+    color: #ff0000;
+}
+a:visited {
+    color: #ff0000;
 }
 para {
     color: #980000;
