@@ -35,6 +35,7 @@ window.addEventListener('load', function() {
         <p style="color: #980000">click <a style="color: #ff0000" href="/"><em>here</em></a> to return home.</p>
         `
     };
+    
     if (is404 === true) {
         document.title = 'Page Not Found (404)';
         main.innerHTML=`
