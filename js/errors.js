@@ -26,6 +26,15 @@ window.addEventListener('load', function() {
         <p style="color: #980000">click <a style="color: #ff0000" href="/"><em>here</em></a> to return home.</p>
         `
     };
+    if (is403 === true) {
+        document.title = 'Forbidden (403)';
+        main.innerHTML=`
+        <h1 style="color: #980000">Forbidden. (403)</h1>
+        <h4 style="color: #980000">You do not have permission to view this page.</h4>
+        <img src="/images/404.png" width="120px" height="120px" />
+        <p style="color: #980000">click <a style="color: #ff0000" href="/"><em>here</em></a> to return home.</p>
+        `
+    };
     if (is404 === true) {
         document.title = 'Page Not Found (404)';
         main.innerHTML=`
