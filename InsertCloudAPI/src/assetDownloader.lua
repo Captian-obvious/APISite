@@ -1,0 +1,3 @@
+local downloader = {}
+
+return downloader
