@@ -1,7 +1,7 @@
 asseturl='https://assetdelivery.roblox.com/v1/asset/?id='
 
 class cloud:
-    def loadAsset(id):
+    def downloadAsset(id):
         theasset = asseturl+id
         if (theasset!=None):
             return encode(theasset)
