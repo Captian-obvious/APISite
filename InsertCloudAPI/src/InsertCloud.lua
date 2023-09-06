@@ -10,21 +10,14 @@ function cloud:JSON(t,data)
     end
 end
 
-function cloud:Decompile(json)
-    if json.StatusCode~='403' and json.StatusCode~='404' and json.StatusCode~='500' then
-        local theAsset = json.Asset
-        if theAsset~={} then
-            if theAsset.ClassName~=nil then
-                local val = Instance.new(theAsset.ClassName)
-            end
-        end
-    end
+function cloud:Decompile(url)
+    
 end
 
 function cloud:CompileAsset(asset,parent)
     if asset~=nil then
         local model = Instance.new('Model',parent)
-        model.Name=''..id
+        model.Name=''
         asset.Parent = model
     end
 end
