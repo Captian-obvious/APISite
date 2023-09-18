@@ -3,9 +3,9 @@ const reader = window.jsmediatags
 // Variables
 // MAIN
 var viewer = {
-    Initalized: false,
+    Initialized: false,
     MediaPlayer: {
-        Initalized: false,
+        Initialized: false,
         Initialize: function() {
             if (this.Initialized === false) {
                 this.Initialized = true
