@@ -15,10 +15,6 @@ var viewer = {
                 window.album = document.getElementById("album");
                 window.album2 = document.getElementById("img2");
                 window.dataimage = document.getElementById("MediaPlayerIcon-icon-play");
-                window.button = document.getElementById("MediaPlayerIcon-icon-play");
-                window.position = document.getElementById("time-position");
-                window.setting = document.getElementById("sound_options");
-                window.vol = document.getElementById("volume");
                 window.debounce = true
                 window.context = new AudioContext();
                 console.log(context);
@@ -71,16 +67,14 @@ var viewer = {
                 };
                 var index=0;
                 var colorValue = "#ff0000";
-                dataimage.setAttribute("data-mediathumb-url", URL.createObjectURL(files[0]));
-                var SRC = dataimage.getAttribute("data-mediathumb-url");
+                var SRC = URL.createObjectURL(files[0]);
                 audio.src = SRC;
                 audio.load();
                 function playNext(audio,i) {
                     if (debounce === true) {
                         debounce = false
                         var input = files[i].name;
-                        dataimage.setAttribute("data-mediathumb-url", URL.createObjectURL(files[i]));
-                        var SRC = dataimage.getAttribute("data-mediathumb-url");
+                        var SRC = URL.createObjectURL(files[i]);
                         audio.src = SRC;
                         audio.load();
                         var input = files[i].name;
