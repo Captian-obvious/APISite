@@ -11,11 +11,10 @@ var viewer = {
                 this.Initialized = true
                 window.audio = new Audio();
                 console.log(audio);
-                window.dur = document.getElementById("MediaPlayerControl-seekbar");
                 window.album = document.getElementById("album");
                 window.album2 = document.getElementById("img2");
-                window.dataimage = document.getElementById("MediaPlayerIcon-icon-play");
-                window.debounce = true
+                window.filetitle = document.getElementById('title');
+                window.debounce = true;
                 window.context = new AudioContext();
                 console.log(context);
                 window.src = context.createMediaElementSource(audio);
