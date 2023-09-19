@@ -23,7 +23,7 @@ window.fv = {
                 window.gn = context.createGain();
                 analyser.connect(gn);
                 gn.connect(context.destination);
-                var fft_Size = 512;
+                window.fft_Size = 512;
                 analyser.fftSize = fft_Size;
                 analyser.maxDecibels = -3;
                 analyser.minDecibels = -150;
