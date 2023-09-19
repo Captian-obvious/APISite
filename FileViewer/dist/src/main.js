@@ -2,7 +2,7 @@
 const reader = window.jsmediatags
 // Variables
 // MAIN
-var viewer = {
+window.fv = = {
     Initialized: false,
     MediaPlayer: {
         Initialized: false,
@@ -227,4 +227,3 @@ var viewer = {
         },
     },
 }
-window.fv = viewer
