@@ -2,7 +2,7 @@
 const reader = window.jsmediatags
 // Variables
 // MAIN
-window.fv = = {
+window.fv = {
     Initialized: false,
     MediaPlayer: {
         Initialized: false,
@@ -32,7 +32,7 @@ window.fv = = {
                 console.log(analyser);
             } else {
                 console.log('FileViewer Exception: Already Initialized!')
-            },
+            };
         },
         Play: function(files) {
             if (this.Initialized === false) {
@@ -197,7 +197,7 @@ window.fv = = {
                         playNext(audio,index);
                     };
                 });
-            },
+            };
         },
     },
     Initialize: function() {
@@ -205,7 +205,7 @@ window.fv = = {
             this.Initialized = true
         } else {
             console.log('FileViewer Exception: MODULE_ALREADY_RUNNING')
-        },
+        };
     },
     Open: function(files) {
         if (files!=null) {
@@ -214,16 +214,16 @@ window.fv = = {
             for (var i=0; i<files.length; i++) {
                 if (files[i].type==='audio/*') {
                     AudioArray[i] = files[i]
-                },
+                };
                 if (files[i].type==='image/*') {
                     ImageArray[i] = files[i]
-                },
-            },
+                };
+            };
             if (AudioArray.length>0) {
                 this.MediaPlayer.Play(AudioArray)
-            },
+            };
         } else {
             console.log('FileViewer Exception: INVALID_INPUT_OR_NULL.')
-        },
+        };
     },
 }
